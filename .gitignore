@@ -1,0 +1,71 @@
+# ==============================================================================
+# LaTeX & Compilation
+# ==============================================================================
+# Dossier de sortie configuré dans VS Code (contient le PDF et les temporaires)
+build/
+
+# Fichiers auxiliaires LaTeX (sécurité en cas de compilation hors build/)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# ==============================================================================
+# Python
+# ==============================================================================
+# Environnements virtuels
+.venv/
+venv/
+ENV/
+env/
+
+# Fichiers compiles et caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Tests, linters et qualite de code
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebooks Jupyter
+.ipynb_checkpoints/
+
+# ==============================================================================
+# Secrets & Logs
+# ==============================================================================
+.env
+*.env
+*.log
+
+# ==============================================================================
+# Fichiers systeme et IDE
+# ==============================================================================
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# VS Code (ignore les états locaux mais permet de versionner les réglages partagés)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
